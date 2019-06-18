@@ -1,1 +1,153 @@
+<html>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+    table {
+      border-collapse: collapse;
+    }
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      text-align: center;
+      box-shadow: 3px 3px 2px 2px #e3e5e5;
+    }
+    td:hover {
+      position: relative;
+      top: -2px;
+      left: 2px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      background-color: #EAEAEA;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #1E90FF;
+    }
+    .center-in-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+
+  <script language="javascript">
+    function mshow(obj) { document.getElementById("sub" + obj.id).style.visibility = "visible"; }
+    function mhidden(obj) { document.getElementById("sub" + obj.id).style.visibility = "hidden"; } 
+  </script>
+</head>
+
+<body bgcolor="#d0d0d0">
+
+  <table border="1" cellpadding="10">
+
+    <caption>学生课程表</caption>
+    <tr style="text-align:center">
+      <td colspan="2">时间</td>
+      <td>周一</td>
+      <td>周二</td>
+      <td>周三</td>
+      <td>周四</td>
+      <td>周五</td>
+      <td>周六</td>
+      <td>周日</td>
+    </tr>
+    <tr>
+      <th rowspan="2">上午</th>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);">第一节(08:20-09:05) 第二节(09:15-10:00)</td>
+      <td id="menu11" onmousedown="mshow(this);" onmouseout="mhidden(this);">web应用开发技术_01</td>
+      <td id="menu12" onmousedown="mshow(this);" onmouseout="mhidden(this);">大学英语四级（A）_64 </td>
+      <td id="menu13" onmousedown="mshow(this);" onmouseout="mhidden(this);">管理信息系统_02 </td>
+      <td id="menu14" onmousedown="mshow(this);" onmouseout="mhidden(this);">数据库原理及应用_01 运营管理_02 </td>
+      <td id="menu12" onmousedown="mshow(this);" onmouseout="mhidden(this);">大学英语四级（A）_64 </td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+    </tr>
+    <tr>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);">第三节(10:20-11:05) 第四节(11:15-12:00)</td>
+      <td id="menu15" onmousedown="mshow(this);" onmouseout="mhidden(this);">毛泽东思想与中国特色社会主义理论体系概论_13</td>
+      <td id="menu16" onmousedown="mshow(this);" onmouseout="mhidden(this);">管理科学基础_01 </td>
+      <td id="menu15" onmousedown="mshow(this);" onmouseout="mhidden(this);">毛泽东思想与中国特色社会主义理论体系概论_13 </td>
+      <td id="menu16" onmousedown="mshow(this);" onmouseout="mhidden(this);">管理科学基础_01 </td>
+      <td id="menu17" onmousedown="mshow(this);" onmouseout="mhidden(this);">运营管理_02</td>
+      <td id="menu18" onmousedown="mshow(this);" onmouseout="mhidden(this);">云计算导论_01 </td>
+      <td id="menu19" onmousedown="mshow(this);" onmouseout="mhidden(this);">创业管理基础（慕课）_02 </td>
+    </tr>
+    <tr>
+      <th rowspan="2">下午</th>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);">第五节(14:00-14:45) 第六节(14:55-15:40)</td>
+      <td id="menu13" onmousedown="mshow(this);" onmouseout="mhidden(this);">管理信息系统_02 </td>
+      <td id="menu20" onmousedown="mshow(this);" onmouseout="mhidden(this);">形势与政策2_41</td>
+      <td id="menu21" onmousedown="mshow(this);" onmouseout="mhidden(this);">会计学_01 </td>
+      <td id="menu22" onmousedown="mshow(this);" onmouseout="mhidden(this);">体育（四）</td>
+      <td id="menu15" onmousedown="mshow(this);" onmouseout="mhidden(this);">毛泽东思想与中国特色社会主义理论体系概论_13 </td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+    </tr>
+    <tr>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);">第七节(16:00-16:45) 第八节(16:55-17:40)</td>
+      <td id="menu23" onmousedown="mshow(this);" onmouseout="mhidden(this);"> 电子商务_01 </td>
+      <td id="menu141" onmousedown="mshow(this);" onmouseout="mhidden(this);">数据库原理及应用_01(西区第一公共教学楼C109) </td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+      <td id="menu21" onmousedown="mshow(this);" onmouseout="mhidden(this);">会计学_01(西区第一公共教学楼B101) </td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+      <td id="menu00" onmousedown="mshow(this);" onmouseout="mhidden(this);"></td>
+    </tr>
+  </table>
+  <div id="submenu11" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    教师：吕成功 1-15周上(西区第一公共教学楼C411)</div>
+  <div id="submenu12" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：张蔚 1-17周上(西区第一公共教学楼C221)（周五单周外语学院楼219）</div>
+  <div id="submenu13" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：刘烨 1-15周上 (西区第一公共教学楼C105)</div>
+  <div id="submenu14" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    01老师：吴君 双周上 (西区第一公共教学楼B405) 02老师：刘亮 邓华 单周上(西区第一公共教学楼B405)</div>
+  <div id="submenu141" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    01老师：吴君 1-15周上 (西区第一公共教学楼B405)</div>
+  <div id="submenu15" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：顾洪英 1-16周上 (西区第一公共教学楼A120) </div>
+  <div id="submenu16" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：赵方方 3-17周上 (西区第一公共教学楼C411)</div>
+  <div id="submenu17" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：刘亮 邓华 1-15周上 (西区第一公共教学楼B405) </div>
+  <div id="submenu18" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：陈志 2-16周上 (西区第一公共教学楼A311)</div>
+  <div id="submenu19" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：姚飞 2-16周上 (西区第一公共教学楼D107)</div>
+  <div id="submenu20" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：邵夏 李坤 5-7周上 (西区第一公共教学楼C123</div>
+  <div id="submenu21" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：刘晓晖 姜红 1-17周上 (西区第一公共教学楼B101)</div>
+  <div id="submenu22" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：陈露 1-15周上 （羽毛球馆）</div>
+  <div id="submenu23" style="visibility:hidden; z-index:100" ;onmousedown="this.style.visibility='visible'"
+    class="center-in-center">
+    老师：张亮 3-17周上 (西区第一公共教学楼B303)</div>
+</body>
+</html>>
